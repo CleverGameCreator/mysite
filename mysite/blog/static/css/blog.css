@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#content {
+    flex: 3;
+    padding: 20px;
+}
+
+#sidebar {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-left: 1px solid #ccc;
+}
+
+h2 a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.date {
+    color: #666;
+    font-style: italic;
+}
