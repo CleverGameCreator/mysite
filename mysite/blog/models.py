@@ -35,6 +35,7 @@ class Post(models.Model):
 
     objects = models.Manager()  # менеджер, применяемый по умолчанию
     published = PublishedManager()  # конкретно-прикладной менеджер
+    tags = TaggableManager()
 
     class Meta:
         ordering = ['-publish']
@@ -51,8 +52,6 @@ class Post(models.Model):
                              self.publish.month,
                              self.publish.day,
                              self.slug])
-
-tags = TaggableManager()
 
 class Comment(models.Model):
     post = models.ForeignKey(Post,
