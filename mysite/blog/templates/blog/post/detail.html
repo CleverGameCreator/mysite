@@ -11,7 +11,8 @@
             Share this post
         </a>
     </p>
-    {% with comments.count as total_comments %}
+    {# Временно отключаем секцию комментариев #}
+    {# {% with comments.count as total_comments %}
         <h2>
             {{ total_comments }} comment{{ total_comments|pluralize }}
         </h2>
@@ -27,5 +28,8 @@
     {% empty %}
         <p>There are no comments.</p>
     {% endfor %}
-    {% include "blog/post/includes/comment_form.html" %}
+    {% include "blog/post/includes/comment_form.html" %} #}
+    
+    <h2>Comments</h2>
+    <p>Comments system is temporarily unavailable.</p>
 {% endblock %}
