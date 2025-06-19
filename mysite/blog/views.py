@@ -72,15 +72,13 @@ def post_detail(request, year, month, day, post):
                              publish__year=year,
                              publish__month=month,
                              publish__day=day)
-    # Список активных комментариев к этому посту
-    comments = post.comments.filter(active=True)
-    # Форма для комментирования пользователями
-    form = CommentForm()
+    # Временно закомментируем код запроса комментариев
+    # comments = post.comments.filter(active=True)
+    comments = []  # Пустой список вместо запроса к базе данных
     return render(request,
-     'blog/post/detail.html',
-           {'post': post,
-                   'comments': comments,
-                   'form': form})
+                'blog/post/detail.html',
+                {'post': post,
+                 'comments': comments})
 
 @require_POST
 def post_comment(request, post_id):
