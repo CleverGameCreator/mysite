@@ -95,7 +95,8 @@ def post_detail(request, year, month, day, post):
                 'blog/post/detail.html',
                 {'post': post,
                  'comments': comments,
-                 'form': form})
+                 'form': form,
+                 'similar_posts': similar_posts})
 
 @require_POST
 def post_comment(request, post_id):
