@@ -50,8 +50,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'blog.apps.BlogConfig',  # Или просто 'blog'
     'taggit',
-    'django.contrib.sites',
-    'django.contrib.sitemaps',
+
 
 ]
 
