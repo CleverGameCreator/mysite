@@ -52,7 +52,7 @@ INSTALLED_APPS = [
     'taggit',
     'django.contrib.sites',
     'django.contrib.sitemaps',
-    # 'django.contrib.postgres',  # Удаляем поддержку PostgreSQL
+    # 'django.contrib.postgres',  # Убираем поддержку PostgreSQL
 ]
 
 MIDDLEWARE = [
