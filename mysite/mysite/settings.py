@@ -95,6 +95,7 @@ DATABASES = {
         'NAME': 'blog',
         'USER': 'blog',
         'PASSWORD': '356479',
+
     }
 }
 
