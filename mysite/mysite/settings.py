@@ -53,7 +53,11 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'django.contrib.sitemaps',
     # 'django.contrib.postgres',  # Удаляем поддержку PostgreSQL
+    'django.contrib.postgres',
+
 ]
+
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
