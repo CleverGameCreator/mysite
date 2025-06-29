@@ -27,7 +27,7 @@ def post_search(request):
                             SearchVector('body', weight='B')
             search_query = SearchQuery(query)
             results = Post.published.annotate(
-                similarity=TrigramSimilarity('title', query),
+
             ).filter(similarity__gt=0.1).order_by('-similarity')
 
         return render(request,
